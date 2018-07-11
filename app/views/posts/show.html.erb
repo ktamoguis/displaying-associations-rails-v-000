@@ -3,7 +3,7 @@
 
 <!-- Add code here to link to the post's category. -->
 <% @post.each do |p| %>
-  <li><%= link_to p.category, post_path(p) %></li>
+  <li><%= link_to p.category, category_path(p.category) %></li>
 <% end %>
 
 <p><%= @post.description %></p>

@@ -2,8 +2,8 @@
 <% binding.pry %>
 
 <!-- Add code here to link to the post's category. -->
-<% @posts.each do |p| %>
-  <li><%= link_to p.title, post_path(p) %></li>
+<% @post.each do |p| %>
+  <li><%= link_to p.category, post_path(p) %></li>
 <% end %>
 
 <p><%= @post.description %></p>

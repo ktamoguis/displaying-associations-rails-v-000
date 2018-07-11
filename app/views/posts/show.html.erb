@@ -3,6 +3,6 @@
 
 <!-- Add code here to link to the post's category. -->
 
-<p><%= link_to @post.category, category_path(@post.category) %></p>
+<p><%= link_to @post.category.name, category_path(@post.category) %></p>
 
 <p><%= @post.description %></p>
